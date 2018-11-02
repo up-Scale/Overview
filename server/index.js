@@ -22,7 +22,7 @@ app.get('/buy/:prod_name/overview', (req, res) => {
 
 
 
-  app.get('/*', (req, res) => {
+  app.get('/buy/*', (req, res) => {
     // res.send('hello')
     res.sendFile(path.join(__dirname, '/../react-client/dist/index.html'))
   });
